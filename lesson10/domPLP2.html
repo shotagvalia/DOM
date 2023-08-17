@@ -8,17 +8,26 @@
     <title>DOM3</title>
   </head>
   <body>
-    <div id="emptyDiv"></div>
+    <style>
+      html {
+        font-size: 17px;
+      }
+
+      button {
+        font-size: 17px;
+        border: 2px solid rgb(80, 118, 215);
+        border-radius: 15px;
+        padding: 7px;
+        background-color: rgb(112, 173, 217);
+        color: rgb(8, 11, 12);
+      }
+    </style>
 
     <button onclick="createNewP()" style="cursor: pointer">
       Add Paragraph
     </button>
 
-    <style>
-      html {
-        font-size: 15px;
-      }
-    </style>
+    <div id="emptyDiv"></div>
 
     <script>
       function createNewP() {

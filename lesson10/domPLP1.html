@@ -13,7 +13,7 @@
 
     <script>
       function greeting() {
-        document.getElementById("hello").innerHTML = "Hello, DOM";
+        document.getElementById("hello").textContent = "Hello, DOM";
       }
     </script>
   </body>
@@ -26,15 +26,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM2</title>
+    <title>DOM2-2</title>
   </head>
   <body>
-    <p id="but" style="cursor: pointer" button onclick="changeColor()">change color</button></p>
+    <p id="change" style="cursor: pointer" button onclick="changeColor()">change color</button></p>
 
     <script>
         function changeColor () {
-            document.getElementById("but").style.background = "red";
-            document.getElementById("but").style.color = "white";
+            document.getElementById("change").style.background = "red";
+            document.getElementById("change").style.color = "white";
     }   
     </script>
   </body>
