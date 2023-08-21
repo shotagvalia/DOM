@@ -5,18 +5,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM4-Event Handling</title>
+    <title>Event Handling</title>
   </head>
   <body>
-    <button>click me</button>
+    <p style="cursor: pointer">
+      <button style="font-size: 15px" onclick="showAlert()">click me</button>
+    </p>
+
     <script>
-      let button = document.querySelector("button");
-      button.addEventListener("click", () => {
-        console.log("button clicked.");
-      });
+      function showAlert() {
+        alert("Button clicked!");
+      }
     </script>
   </body>
 </html> -->
 
 <!-- lesson5 -->
-x
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <script>
+      function validateForm() {
+        let inputField = document.getElementById("inputField");
+        let errorMessage = document.getElementById("errorMessage");
+
+        if (inputField.value === "") {
+          errorMessage.textContent = "Input cannot be empty.";
+          errorMessage.style.display = "block";
+          return false; // Prevent form submission
+        } else {
+          errorMessage.style.display = "none";
+          alert("Form submitted!");
+          return true; // Allow form submission
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Form Validation</h2>
+    <form onsubmit="return validateForm()">
+      <label for="inputField">Input:</label>
+      <input type="text" id="inputField" name="inputField" />
+      <span id="errorMessage" style="color: red; display: none"></span
+      ><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  </html> -->
