@@ -2,10 +2,6 @@
 
 body {
   font-family: Space Mono, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
   background-color: #c5e4e7;
 }
 .splitter {
@@ -40,14 +36,15 @@ body {
   border: none;
 }
 #bill-input {
+  padding-right: 17px;
   text-align: right;
-  padding: 6px 17px 6px 158px;
+  font-size: 24px;
   border: none;
   background: #f3f9fa;
   border-radius: 5px;
 }
 #icon {
-  padding-left: 17px;
+  padding-left: 0px;
 }
 .select-tip {
   display: flex;
@@ -70,21 +67,28 @@ body {
   border-radius: 5px;
   background: #00474b;
   padding: 6px 17.3px 6px 16.3px;
-}
-.button1 {
   color: #fff;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
+  border: none;
 }
-#button3 {
+.button1 {
   width: 146.631px;
   background: #f3f9fa;
   border: none;
-}
-#button3 .button1 {
   color: #547878;
   text-align: right;
+}
+#custom-input {
+  width: 111.487px;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #f3f9fa;
+  border: none;
 }
 .people {
   margin-top: 32px;
@@ -107,14 +111,12 @@ body {
   border: none;
 }
 #people-input {
+  padding-right: 17px;
   text-align: right;
-  padding: 6px 17px 6px 158px;
+  font-size: 24px;
   border: none;
   background: #f3f9fa;
   border-radius: 5px;
-}
-#person {
-  padding-left: 17px;
 }
 .total {
   margin-top: 32px;
@@ -137,6 +139,12 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 87px;
+}
+#tip-amount,
+#total-amount {
+  color: #26c2ae;
+  font-size: 32px;
+  max-width: 143px;
 }
 .subtotal {
   display: flex;
