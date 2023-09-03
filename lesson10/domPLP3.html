@@ -8,9 +8,15 @@
     <title>Event Handling</title>
   </head>
   <body>
-    <p style="cursor: pointer">
-      <button style="font-size: 15px" onclick="showAlert()">click me</button>
-    </p>
+    <div>
+      <button
+        style="font-size: 15px"
+        style="cursor: pointer"
+        onclick="showAlert()"
+      >
+        click me
+      </button>
+    </div>
 
     <script>
       function showAlert() {
@@ -26,12 +32,24 @@
 <html>
   <head>
     <title>Form Validation</title>
+  </head>
+  <body>
+    <h2>Form Validation</h2>
+
+    <form onsubmit="return validateForm()">
+      <label for="inputField">Input:</label>
+      <input type="text" id="inputField" name="inputField" />
+      <span id="errorMessage" style="color: red; display: none"></span
+      ><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
     <script>
       function validateForm() {
         let inputField = document.getElementById("inputField");
         let errorMessage = document.getElementById("errorMessage");
 
-        if (inputField.value === "") {
+        if (inputField.value.trim() === "") {
           errorMessage.textContent = "Input cannot be empty.";
           errorMessage.style.display = "block";
           return false; // Prevent form submission
@@ -42,15 +60,5 @@
         }
       }
     </script>
-  </head>
-  <body>
-    <h2>Form Validation</h2>
-    <form onsubmit="return validateForm()">
-      <label for="inputField">Input:</label>
-      <input type="text" id="inputField" name="inputField" />
-      <span id="errorMessage" style="color: red; display: none"></span
-      ><br /><br />
-      <button type="submit">Submit</button>
-    </form>
   </body>
-  </html> -->
+</html> -->
