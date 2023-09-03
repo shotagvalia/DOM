@@ -13,7 +13,7 @@ function updateInfo() {
   if (amount.value.length > 5) {
     amount.value = "";
   }
-  if (number_Of_People.value.length > 5) {
+  if (number_Of_People.value.length > 3) {
     number_Of_People.value = "";
   }
   if (customInput.value.length > 3) {
@@ -80,7 +80,7 @@ percentButtons.map((button) => {
       colorChanger.style.backgroundColor = "#00474B";
       colorChanger.style.color = "#FFF";
     }
-    event.target.style.backgroundColor = "#9FE8DF";
+    event.target.style.backgroundColor = "#26C2AE";
     event.target.style.color = "#00474B";
     colorChanger = event.target;
     percent = parseInt(event.target.textContent);
@@ -89,7 +89,7 @@ percentButtons.map((button) => {
   });
 });
 
-resetButton.addEventListener("touchstart", () => {
+resetButton.addEventListener("click", () => {
   amount.value = "0";
   number_Of_People.value = "0";
   customInput.value = "Custom";

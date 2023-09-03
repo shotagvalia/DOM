@@ -77,7 +77,6 @@ body {
   width: 146.631px;
   background: #f3f9fa;
   border: none;
-  color: #547878;
   text-align: right;
 }
 #custom-input {
@@ -88,6 +87,7 @@ body {
   font-weight: 700;
   line-height: normal;
   background-color: #f3f9fa;
+  color: #547878;
   border: none;
 }
 .people {
