@@ -9,17 +9,16 @@
   </head>
   <body>
     <div>
-      <button
-        style="font-size: 15px"
-        style="cursor: pointer"
-        onclick="showAlert()"
-      >
+      <button id="btn" style="font-size: 15px" style="cursor: pointer">
         click me
       </button>
     </div>
 
     <script>
-      function showAlert() {
+      let button = document.getElementById("btn");
+      button.addEventListener("click", () => clickMe);
+
+      function clickMe() {
         alert("Button clicked!");
       }
     </script>

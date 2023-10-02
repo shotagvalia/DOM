@@ -42,13 +42,13 @@
 
 <!-- <p>A paragraph with a <button>button</button>.</p>
 <script>
-  let para = document.querySelector("p");
+  let paragraph = document.querySelector("p");
   let button = document.querySelector("button");
 
   window.addEventListener("mousedown", () => {
     console.log("Handler for window.");
   });
-  para.addEventListener("mousedown", () => {
+  paragraph.addEventListener("mousedown", () => {
     console.log("Handler for paragraph.");
   });
   button.addEventListener("mousedown", (event) => {
