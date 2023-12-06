@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical Lecture</title>
+  </head>
+
+  <body>
+    <!-- <h1 class="heading">Hello World</h1>
+    <h2 class="heading">heading</h2>
+    <h2 class="heading">heading</h2>
+    <h2 class="heading">heading</h2> -->
+
+    <!-- <div>
+      <h2 class="heading">
+        <span id="spanText">
+          <p class="description">This is a description</p>
+        </span>
+      </h2>
+    </div> -->
+
+    <!-- <h2 class="heading">heading</h2>
+    <p id="text">This is a paragraph</p> -->
+
+    <button onclick="add()">Add</button>
+    <button onclick="multiply()">Multiply by 2</button>
+  </body>
+
+  <script>
+    let number = 0;
+
+    function add() {
+      const newParagraph = document.createElement("p");
+      newParagraph.textContent = number;
+      document.body.append(newParagraph);
+      number++;
+    }
+
+    function multiply() {
+      const paragraphs = document.querySelectorAll("p");
+
+      for (let paragraph of paragraphs) {
+        paragraph.textContent = Number(paragraph.textContent) * 2;
+      }
+    }
+
+    // let headings = document.getElementsByClassName("heading");
+
+    // for (let heading of Array.from(headings)) {
+    //   heading.textContent = "this is a heading";
+    // }
+
+    // let paragraph = document.getElementById("text");
+    // paragraph.textContent = "This text was created with dom";
+
+    // const para = document.querySelector("div .heading #spanText .description");
+    // console.log(para);
+  </script>
+</html>
