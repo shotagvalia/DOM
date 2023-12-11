@@ -1,9 +1,7 @@
 // 1
 // const paragraph = document.getElementById("paragraph");
 
-// function changeTextContent() {
-//   paragraph.textContent = "Hello, DOM!";
-// }
+// const changeTextContent = () => (paragraph.textContent = "Hello, DOM!");
 
 // changeTextContent();
 
@@ -11,21 +9,21 @@
 
 // const button = document.getElementById("btn");
 
-// function changeStyles() {
+// const changeStyles = () => {
 //   button.style.backgroundColor = "red";
 //   button.style.color = "white";
-// }
+// };
 
 // changeStyles();
 
 // 3 -------------------------------
 // const parent = document.getElementById("parent");
 
-// function createElement() {
+// const createElement = () => {
 //   const child = document.createElement("p");
 //   child.textContent = "New paragraph";
 //   parent.appendChild(child);
-// }
+// };
 
 // createElement();
 

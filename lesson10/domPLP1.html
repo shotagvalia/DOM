@@ -13,9 +13,8 @@
     </p>
 
     <script>
-      function greeting() {
-        document.getElementById("hello").textContent = "Hello, DOM";
-      }
+      const greeting = () =>
+        (document.getElementById("hello").textContent = "Hello, DOM");
     </script>
   </body>
 </html> -->
@@ -30,15 +29,19 @@
     <title>DOM2-2</title>
   </head>
   <body>
-    <p id="change" style="cursor: pointer" button onclick="changeColor ()">
+    <p
+      id="change"
+      style="cursor: pointer; background-color: blue"
+      button
+      onclick="changeColor ()"
+    >
       change color
     </p>
 
     <script>
-      function changeColor() {
-        document.getElementById("change").style.background = "red";
-        document.getElementById("change").style.color = "white";
-      }
+      const changeColor = () =>
+        (document.getElementById("change").style.background = "yellow");
+      document.getElementById("change").style.color = "red";
     </script>
   </body>
 </html> -->

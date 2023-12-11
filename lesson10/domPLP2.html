@@ -30,12 +30,14 @@
     <div id="emptyDiv"></div>
 
     <script>
-      function createNewP() {
+      let number = 0;
+
+      const createNewP = () => {
         let newParagraph = document.createElement("p");
         newParagraph.textContent = "New Paragraph";
-        document.getElementById("emptyDiv");
+        document.querySelector("#emptyDiv");
         emptyDiv.appendChild(newParagraph);
-      }
+      };
     </script>
   </body>
 </html> -->
